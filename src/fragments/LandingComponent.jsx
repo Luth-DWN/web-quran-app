@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import pray from "../assets/img/pray-bro.png";
+// import pray from "../assets/img/pray-bro.png";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const LandingComponent = (props) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,11 +23,11 @@ const LandingComponent = (props) => {
     }
   });
 
-  const { img = pray, title = "...", children = "...", link1 = "", link2 = "", nameLink1 = "", nameLink2 = "" } = props;
+  const {  title = "...", children = "...", link1 = "", link2 = "", nameLink1 = "", nameLink2 = "" } = props;
   return (
     <div className="sm:flex pt-5 sm sm:gap-8">
       <div className="flex justify-center md:w-1/4" ref={image}>
-        <img src={img} className="ml-4 object-cover" alt="" />
+        <img src='./Pray-bro.svg' className="ml-4 object-cover" alt="" />
       </div>
       <div className="sm:w-3/4 grid content-center" ref={desc}>
         <h1 className="text-4xl text-sky-900 font-medium">{title}</h1>
