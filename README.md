@@ -1,4 +1,6 @@
-# React + Vite
+# Web App Quran
+
+https://web-app-quran.netlify.app
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
